@@ -48,7 +48,7 @@ The application analyzes the following parameters to determine milk quality:
 2. **Install required dependencies**
 
    ```bash
-   pip install streamlit pandas numpy scikit-learn
+   pip install -r requirements.txt
    ```
 
 3. **Run the application**
@@ -59,6 +59,88 @@ The application analyzes the following parameters to determine milk quality:
 
 4. **Open your browser**
    Navigate to `http://localhost:8501` to access the application
+
+## 🌐 Deployment
+
+### Option 1: Streamlit Cloud (Recommended - Free)
+
+**Easiest deployment option for public repositories:**
+
+1. **Push your code to GitHub**
+
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Deploy on Streamlit Cloud**
+
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Sign in with your GitHub account
+   - Click "New app"
+   - Select your repository: `yourusername/Milk-Quality_Prediction`
+   - Set the file path: `app.py`
+   - Click "Deploy!"
+
+3. **Your app will be live at**: `https://your-app-name.streamlit.app`
+
+### Option 2: Heroku
+
+**For more control and custom domains:**
+
+1. **Install Heroku CLI**
+
+   ```bash
+   # Download from: https://devcenter.heroku.com/articles/heroku-cli
+   ```
+
+2. **Login to Heroku**
+
+   ```bash
+   heroku login
+   ```
+
+3. **Create Heroku app**
+
+   ```bash
+   heroku create your-milk-quality-app
+   ```
+
+4. **Deploy to Heroku**
+
+   ```bash
+   git add .
+   git commit -m "Deploy to Heroku"
+   git push heroku main
+   ```
+
+5. **Open your app**
+
+   ```bash
+   heroku open
+   ```
+
+### Option 3: Railway
+
+**Modern alternative to Heroku:**
+
+1. **Go to [railway.app](https://railway.app)**
+2. **Connect your GitHub repository**
+3. **Select the repository**
+4. **Railway will automatically detect it's a Python app**
+5. **Deploy!**
+
+### Option 4: Render
+
+**Free hosting with automatic deployments:**
+
+1. **Go to [render.com](https://render.com)**
+2. **Create a new Web Service**
+3. **Connect your GitHub repository**
+4. **Set build command**: `pip install -r requirements.txt`
+5. **Set start command**: `streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
+6. **Deploy!**
 
 ## 🎯 How to Use
 
@@ -104,8 +186,11 @@ Milk-Quality_Prediction/
 ├── app.py              # Main Streamlit application
 ├── milknew.csv         # Training dataset
 ├── rf_model.pkl        # Trained Random Forest model
-├── README.md           # Project documentation
-└── requirements.txt    # Python dependencies
+├── requirements.txt    # Python dependencies
+├── Procfile           # Heroku deployment configuration
+├── setup.sh           # Heroku setup script
+├── runtime.txt        # Python version specification
+└── README.md          # Project documentation
 ```
 
 ## 🔬 Dataset Information
