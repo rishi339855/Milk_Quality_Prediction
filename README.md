@@ -36,7 +36,7 @@ The application analyzes the following parameters to determine milk quality:
 - Python 3.7 or higher
 - pip (Python package installer)
 
-### Installation
+### Local Installation
 
 1. **Clone the repository**
 
@@ -60,11 +60,9 @@ The application analyzes the following parameters to determine milk quality:
 4. **Open your browser**
    Navigate to `http://localhost:8501` to access the application
 
-## 🌐 Deployment
+## 🌐 Streamlit Cloud Deployment
 
-### Option 1: Streamlit Cloud (Recommended - Free)
-
-**Easiest deployment option for public repositories:**
+### Deploy Your App (Free & Easy)
 
 1. **Push your code to GitHub**
 
@@ -85,62 +83,12 @@ The application analyzes the following parameters to determine milk quality:
 
 3. **Your app will be live at**: `https://your-app-name.streamlit.app`
 
-### Option 2: Heroku
+### Deployment Tips
 
-**For more control and custom domains:**
-
-1. **Install Heroku CLI**
-
-   ```bash
-   # Download from: https://devcenter.heroku.com/articles/heroku-cli
-   ```
-
-2. **Login to Heroku**
-
-   ```bash
-   heroku login
-   ```
-
-3. **Create Heroku app**
-
-   ```bash
-   heroku create your-milk-quality-app
-   ```
-
-4. **Deploy to Heroku**
-
-   ```bash
-   git add .
-   git commit -m "Deploy to Heroku"
-   git push heroku main
-   ```
-
-5. **Open your app**
-
-   ```bash
-   heroku open
-   ```
-
-### Option 3: Railway
-
-**Modern alternative to Heroku:**
-
-1. **Go to [railway.app](https://railway.app)**
-2. **Connect your GitHub repository**
-3. **Select the repository**
-4. **Railway will automatically detect it's a Python app**
-5. **Deploy!**
-
-### Option 4: Render
-
-**Free hosting with automatic deployments:**
-
-1. **Go to [render.com](https://render.com)**
-2. **Create a new Web Service**
-3. **Connect your GitHub repository**
-4. **Set build command**: `pip install -r requirements.txt`
-5. **Set start command**: `streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
-6. **Deploy!**
+- ✅ **Free hosting** for public repositories
+- ✅ **Automatic deployments** when you push to GitHub
+- ✅ **Custom domains** available
+- ✅ **Easy sharing** with just a URL
 
 ## 🎯 How to Use
 
@@ -187,10 +135,9 @@ Milk-Quality_Prediction/
 ├── milknew.csv         # Training dataset
 ├── rf_model.pkl        # Trained Random Forest model
 ├── requirements.txt    # Python dependencies
-├── Procfile           # Heroku deployment configuration
-├── setup.sh           # Heroku setup script
-├── runtime.txt        # Python version specification
-└── README.md          # Project documentation
+├── .streamlit/         # Streamlit configuration
+│   └── config.toml     # App configuration
+└── README.md           # Project documentation
 ```
 
 ## 🔬 Dataset Information
