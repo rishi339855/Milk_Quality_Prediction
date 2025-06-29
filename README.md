@@ -171,8 +171,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Project Link**: [https://github.com/yourusername/Milk-Quality_Prediction](https://github.com/yourusername/Milk-Quality_Prediction)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/Milk-Quality_Prediction/issues)
+- **Project Link**: [https://github.com/yourusername/Milk-Quality_Prediction](https://github.com/ishi339855/Milk-Quality_Prediction)
+- **Issues**: [GitHub Issues](https://github.com/rishi339855/Milk-Quality_Prediction/issues)
 
 ---
 
